@@ -105,7 +105,7 @@ dependencies {
     implementation("androidx.paging:paging-compose:1.0.0-alpha14")
 
     // Coroutines
-    val coroutinesVersion = "1.6.2"
+    val coroutinesVersion = "1.7.3"
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesVersion")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion")
