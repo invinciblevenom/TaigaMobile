@@ -83,7 +83,7 @@ dependencies {
     // compose activity
     implementation("androidx.activity:activity-compose:1.4.0")
     // view model support
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
     // compose constraint layout
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
 
