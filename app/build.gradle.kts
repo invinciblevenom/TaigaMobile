@@ -22,8 +22,6 @@ android {
         versionCode = 29
         versionName = "1.9"
         project.base.archivesName.set("TaigaMobile-$versionName")
-
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
 
@@ -34,19 +32,6 @@ android {
         }
     }
 
-    testOptions.unitTests {
-        isIncludeAndroidResources = true
-    }
-
-    sourceSets {
-        fun AndroidSourceSet.setupTestSrcDirs() {
-            kotlin.srcDir("src/sharedTest/kotlin")
-            resources.srcDir("src/sharedTest/resources")
-        }
-
-        getByName("test").setupTestSrcDirs()
-        getByName("androidTest").setupTestSrcDirs()
-    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -177,13 +162,6 @@ dependencies {
     // manual json parsing when filling test instance
     implementation("com.google.code.gson:gson:2.9.0")
 
-    // MockK
-    testImplementation("io.mockk:mockk:1.12.4")
-}
-
-fun DependencyHandler.allTestsImplementation(dependencyNotation: Any) {
-    testImplementation(dependencyNotation)
-    androidTestImplementation(dependencyNotation)
 }
 
 tasks.register<Exec>("launchTestInstance") {
@@ -193,9 +171,3 @@ tasks.register<Exec>("launchTestInstance") {
 tasks.register<Exec>("stopTestInstance") {
     commandLine("../taiga-test-instance/stop-taiga.sh")
 }
-
-tasks.withType<Test> {
-    dependsOn("launchTestInstance")
-    finalizedBy("stopTestInstance")
-}
-
