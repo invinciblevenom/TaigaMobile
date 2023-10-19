@@ -215,7 +215,7 @@ fun WikiPageScreenContent(
             title = pageName,
             description = content,
             showTitle = false,
-            onSaveClick = { title, description ->
+            onSaveClick = { _, description ->
                 editWikiPage(description)
                 isEditPageVisible = false
             },
