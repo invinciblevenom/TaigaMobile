@@ -26,35 +26,11 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        getByName("debug") {
-            storeFile = file("./keystores/debug.keystore")
-            storePassword = "android"
-            keyAlias = "debug"
-            keyPassword = "android"
-        }
-
-        create("release") {
-            val properties = Properties().also {
-                it.load(file("./signing.properties").inputStream())
-            }
-            storeFile = file("./keystores/release.keystore")
-            storePassword = properties.getProperty("password")
-            keyAlias = properties.getProperty("alias")
-            keyPassword = properties.getProperty("password")
-        }
-    }
-
 
     buildTypes {
-        getByName("debug") {
-            signingConfig = signingConfigs.getByName("debug")
-        }
-
         getByName("release") {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-            signingConfig = signingConfigs.getByName("release")
         }
     }
 
