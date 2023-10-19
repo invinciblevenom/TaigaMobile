@@ -102,7 +102,7 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.5.0-rc01")
 
     // Paging (with Compose)
-    implementation("androidx.paging:paging-compose:1.0.0-alpha14")
+    implementation("androidx.paging:paging-compose:3.3.0-alpha02")
 
     // Coroutines
     val coroutinesVersion = "1.6.2"
