@@ -121,7 +121,7 @@ dependencies {
     implementation("com.squareup.retrofit2:converter-moshi:$retrofitVersion")
 
     // OkHttp
-    val okHttpVersion = "4.9.3"
+    val okHttpVersion = "4.12.0"
     implementation("com.squareup.okhttp3:okhttp:$okHttpVersion")
     implementation("com.squareup.okhttp3:logging-interceptor:$okHttpVersion")
 
