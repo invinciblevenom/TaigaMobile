@@ -143,7 +143,7 @@ dependencies {
     implementation("io.github.vanpra.compose-material-dialogs:color:0.7.0")
 
     // since we need to connect to test db instance
-    val postgresDriverVersion = "42.3.6"
+    val postgresDriverVersion = "42.6.0"
     testRuntimeOnly("org.postgresql:postgresql:$postgresDriverVersion")
     androidTestRuntimeOnly("org.postgresql:postgresql:$postgresDriverVersion")
 
