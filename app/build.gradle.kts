@@ -19,8 +19,8 @@ android {
         applicationId = namespace!!
         minSdk = 21
         targetSdk = 31
-        versionCode = 29
-        versionName = "1.9"
+        versionCode = 30
+        versionName = "2.0"
         project.base.archivesName.set("TaigaMobile-$versionName")
     }
 
@@ -77,7 +77,7 @@ dependencies {
     implementation("androidx.compose.ui:ui:$composeVersion")
     implementation("androidx.compose.material:material:$composeVersion")
     // Material You
-    implementation("androidx.compose.material3:material3:1.2.0-alpha10")
+    implementation("androidx.compose.material3:material3:1.0.0-alpha09")
     implementation("androidx.compose.ui:ui-tooling:$composeVersion")
     implementation("androidx.compose.animation:animation:$composeVersion")
     // compose activity
