@@ -142,18 +142,6 @@ dependencies {
     // Compose material dialogs (color picker)
     implementation("io.github.vanpra.compose-material-dialogs:color:0.7.0")
 
-    /**
-     * Test frameworks & dependencies
-     */
-    allTestsImplementation(kotlin("test-junit"))
-
-    // Robolectric (run android tests on local host)
-    testRuntimeOnly("org.robolectric:robolectric:4.8.1")
-
-    allTestsImplementation("androidx.test:core-ktx:1.4.0")
-    allTestsImplementation("androidx.test:runner:1.4.0")
-    allTestsImplementation("androidx.test.ext:junit-ktx:1.1.3")
-
     // since we need to connect to test db instance
     val postgresDriverVersion = "42.3.6"
     testRuntimeOnly("org.postgresql:postgresql:$postgresDriverVersion")
