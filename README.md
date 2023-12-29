@@ -35,4 +35,4 @@ This is the **unofficial** android app for the agile project management system [
 Probably sucks. I'm not very good at designing UI, but I did my best.
 
 ## Download
-Check out the app on [Google Play](https://play.google.com/store/apps/details?id=io.eugenethedev.taigamobile&utm_source=github) or go to the [Releases page](https://github.com/EugeneTheDev/TaigaMobile/releases) to download the latest apk.
+Click here to download the [Releases page](https://github.com/invinciblevenom/TaigaMobile/releases)  latest apk.
